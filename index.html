@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+    <audio id="audio"  onended="finish()" autoplay class="aud"  src=""></audio>
+    <div id="container">
+        <h1>
+            Hmm.. I hope it works.
+        </h1>
+        <div id="music">
+            
+            <div id="musictitle"><marquee direction=right><h4 class="musictittle"></h4></marquee></div>
+            <div id="musicimg"><img class="musicimg" src="img/starboy.png" alt="no-img"></div>
+            <div id="button">
+                <a class="musicbuttons" id="back" onclick="prevSong()"><i class="fa fa-step-backward fa-2x"></i></a>
+                <a class="musicbuttons" id="play"><i class="fa fa-play-circle fa-2x"></i></a>
+                <a class="musicbuttons" id="next" onclick="nextSong()"><i class="fa fa-step-forward fa-2x"></i></a>
+            </div>
+    
+        </div>
+        
+    </div>
+
+    <script src="music.js"></script>
+</body>
+</html>

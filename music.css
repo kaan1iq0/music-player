@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+
+body{
+    background-color: #101010;
+    z-index: 0;
+}
+#container{
+    
+
+    width: 50%;
+    height: 200px;
+    margin: 13% auto;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    padding-bottom: 30px;
+    
+    font-size: 50px;
+    color: #fff;
+}
+#audio{
+ 
+    z-index: 1;
+    position: absolute;
+    background-color: black;
+
+}
+#music{
+ 
+    position: sticky; 
+    /*
+        position: fixed; 
+        It fixes it with and you can make it open to the left.
+
+    */
+    right: 100px;
+    top: 100px;
+
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+  
+
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+
+
+
+    z-index: 1;
+   
+    transition: all 1s ease-in-out;
+  
+    background-color: rgba(189, 189, 189, 0.432);
+  
+
+}
+.musicimg{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    z-index: 0;
+
+   
+}
+
+#musictitle{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    z-index: -1;
+    font-size: x-large;
+    
+    color: rgb(0, 0, 0);
+    
+}
+
+.musbutimg{
+    width: 35px;
+    height: 33px;
+    
+}
+
+#button{
+   
+   
+    position: static;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    z-index: -1;
+    padding: 30px 20px 0px 40px;
+
+    flex-direction: row;
+   
+}
+.musicbuttons{
+    cursor: pointer;
+    user-select: none;
+    padding: 20px;
+    width: 33px;
+    height: 33px;
+    background-color: #f1f1f100;
+    border-radius: 100%;
+ 
+    
+}
+
+
+#music:hover{
+    width: 400px;
+}
+
+
+
